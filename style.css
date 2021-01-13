@@ -64,23 +64,45 @@ header {
     display: table-cell;
     vertical-align: middle;
 }
-.menu {
-    width: 70%;
-    background-color: #FF5558;
-    margin-left: -100%;
-    position: absolute;
-    transition: all 0.5s;
-    margin-top: 20vh;
-}
 #btn-menu {
     position: absolute;
     display: none;
 }
+.menu {
+	width: 70%;
+	background-color: rgba(0,0,0,0.20);
+	margin-left: -100%;
+	position: absolute;
+	transition: all 0.5s;
+	margin-top: 20vh;
+}
+
+.menu ul {
+	display: flex;
+	flex-direction: column;
+}
 .menu li {
-    color: #FFFFFF;
-    text-decoration: none;
+	height: 50px;
+	border-top: 2px solid #FFFFFF;
+
 
 }
+.menu li a {
+	text-decoration: none;
+	color: #79ACA9;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.menu li a:hover {
+	color: #FEC2A3;
+}
+
+
 
 #btn-menu:checked ~ .menu {
     margin-left: 16px;
@@ -95,14 +117,15 @@ header {
   padding-left: 32px;
 }
 .slider {
-  width: 100%;
-  height: 100vh;
-  background-color: #EAE9E9;
-  margin-left: 0px;
-  padding-left: 32px;
-  padding-top: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
+	width: 100%;
+	height: 100vh;
+	background-color: #EAE9E9;
+	margin-left: 0px;
+	padding-left: 32px;
+	padding-top: 32px;
+	padding-right: 32px;
+	padding-bottom: 32px;
+	margin-right: 32px;
 }
 .contenedor {
   position: relative;
@@ -120,4 +143,16 @@ footer {
 header label {
     cursor: pointer;
     position: absolute;
+}
+.definicio {
+	font-size: 60px;
+	width: auto;
+	padding-right: 32px;
+	font-weight: 400;
+	font-family: Montserrat;
+
+
+
+serif-sanz;
+serif-sanz;
 }
